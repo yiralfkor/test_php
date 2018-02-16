@@ -1,0 +1,75 @@
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Checkout</title>
+
+    <link rel="stylesheet" type="text/css"
+        href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="./Shop_files/shop.css" />
+</head>
+
+<body>
+<div class="container">
+
+<h1 class="page-header">
+  PayPal Plus Sample Shop</h1>
+
+
+<form role="form" method="post" action="DeleteXP.php" class="form-horizontal" name="adjustConfiguration">
+
+<div class="form-group pull-right">
+    <a href="WebExperienceProfile.html" class="btn btn-primary" role="button">Regresar</a>
+    <button type="submit" class="btn btn-primary">Eliminar XP</button>
+</div>
+<div class="col-md-12">
+	<div class="row">
+
+		<div class="form-group">
+    	<label for="clientId" class="col-sm-3 control-label">Client ID</label>
+			<div class="col-sm-7">
+        		<input type="text" class="form-control" id="clientId" name="clientId" value="">
+    		</div>
+		</div>
+
+		<div class="form-group">
+    	<label for="secret" class="col-sm-3 control-label">Secret</label>
+			<div class="col-sm-7">
+        		<input type="text" class="form-control" id="secret" name="secret" value="">
+    		</div>
+		</div>
+
+        <div class="form-group">
+        <label for="xp_profile" class="col-sm-3 control-label">XP Profile</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="xp_profile" name="xp_profile" value="">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="paypalMode" class="col-sm-3 control-label">paypalMode</label>
+                <div class="col-sm-7">
+                    <select class="form-control" id="paypalMode" name="paypalMode">
+                        <option value="sandbox" selected="">Sandbox</option>
+                        <option value="live">Live</option>
+                    </select>
+                </div>
+
+        </div>
+
+
+</div>
+</div>
+
+<div class="form-group pull-right">
+    <a href="WebExperienceProfile.html" class="btn btn-primary" role="button">Regresar</a>
+    <button type="submit" class="btn btn-primary">Eliminar XP</button>
+</div>
+
+</form>
+</body>
+</html>

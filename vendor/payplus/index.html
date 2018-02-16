@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PP+ Sample Shop</title>
+
+    <link rel="stylesheet" type="text/css" href="./Shop_files/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./Shop_files/shop.css">
+</head>
+<body id="debug">
+
+<div style="display: none;" id="paypal-config"></div>
+
+<div class="container">
+
+<h1 class="page-header">
+  PayPal Plus Sample Shop</h1>
+
+    
+
+<ol class="breadcrumb">
+    <li>Para realizar de manera correcta la configuración para PayPal Plus, serán Requeridos de manera obligatoria el Client ID, Secret y Experience Profile</li>
+</ol>
+
+<div class="row">
+
+
+<form role="form" method="post" action="ppp.php" class="form-horizontal" name="adjustConfiguration">
+<div class="form-group pull-right">
+    <a href="WebExperienceProfile.html" class="btn btn-primary" role="button">Crear o Consultar Experience Profile</a>
+    <button type="submit" class="btn btn-primary">Go to checkout</button>
+</div>
+
+
+
+<div class="row">
+<div class="col-md-12">
+
+
+
+<h2>Configuration</h2>
+
+
+<div class="form-group">
+    <label for="cfgitem-itemName" class="col-sm-3 control-label">itemName</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-itemName" name="itemName" value="Memoria USB">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-itemDescription" class="col-sm-3 control-label">itemDescription</label>
+    <div class="col-sm-7"> 
+
+
+        <input type="text" class="form-control" id="cfgitem-itemDescription" name="itemDescription" value="32 GB">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-itemSku" class="col-sm-3 control-label">itemSku</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-itemSku" name="itemSku" value="Art. 11008">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-itemPrice" class="col-sm-3 control-label">itemPrice</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-itemPrice" name="itemPrice" value="500">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-itemQuantity" class="col-sm-3 control-label">itemQuantity</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-itemQuantity" name="itemQuantity" value="1">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-payerEmail" class="col-sm-3 control-label">payerEmail</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-payerEmail" name="payerEmail" value="bbmmrroo@hotmail.com">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-payerPhone" class="col-sm-3 control-label">payerPhone</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-payerPhone" name="payerPhone" value="5534353637">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-payerFirstName" class="col-sm-3 control-label">payerFirstName</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-payerFirstName" name="payerFirstName" value="Juan">
+    </div>
+
+</div>
+<div class="form-group">
+    <label for="cfgitem-payerLastName" class="col-sm-3 control-label">payerLastName</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-payerLastName" name="payerLastName" value="Perez">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-shippingAddressRecipient" class="col-sm-3 control-label">shippingAddressRecipient</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-shippingAddressRecipient" name="shippingAddressRecipient" value="Juan Perez">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-shippingAddressStreet1" class="col-sm-3 control-label">shippingAddressStreet1</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-shippingAddressStreet1" name="shippingAddressStreet1" value="Mariano Escobedo 476">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-shippingAddressStreet2" class="col-sm-3 control-label">shippingAddressStreet2</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-shippingAddressStreet2" name="shippingAddressStreet2" value="Piso 14">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-shippingAddressPostal" class="col-sm-3 control-label">shippingAddressPostal</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-shippingAddressPostal" name="shippingAddressPostal" value="11590">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-shippingAddressCity" class="col-sm-3 control-label">shippingAddressCity</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-shippingAddressCity" name="shippingAddressCity" value="Miguel Hidalgo">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-shippingAddressCountry" class="col-sm-3 control-label">shippingAddressCountry</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-shippingAddressCountry" name="shippingAddressCountry" value="MX">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-shippingAddressState" class="col-sm-3 control-label">shippingAddressState</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-shippingAddressState" name="shippingAddressState" value="Distrito Federal">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-disallowRememberedCards" class="col-sm-3 control-label">disallowRememberedCards</label>
+    <div class="col-sm-7">
+
+    <select class="form-control" id="cfgitem-disallowRememberedCards" name="disallowRememberedCards">
+        <option value="false" selected="">no, allow user to remember cards (False)</option>
+        <option value="true">yes, the user will have no option to remember cards (True)</option>
+    </select>
+    </div>
+
+</div>
+<div class="form-group">
+    <label for="cfgitem-rememberedCards" class="col-sm-3 control-label">rememberedCards</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-rememberedCards" name="rememberedCards" value="">
+    </div>
+</div>
+
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-paypalMode" style="color:#FF0000;" class="col-sm-3 control-label">paypalMode</label>
+    <div class="col-sm-7">
+
+    <select class="form-control" id="cfgitem-paypalMode" name="paypalMode">
+        <option value="testing">Testing locally or on stage</option>
+        <option value="sandbox" selected="">Sandbox</option>
+        <option value="live">Live</option>
+    </select>
+    </div>
+
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-clientId" style="color:#FF0000;" class="col-sm-3 control-label">clientId</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-clientId" name="clientId" value="">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-secret" style="color:#FF0000;" class="col-sm-3 control-label">secret</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-secret" name="secret" value="">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-experience_profile_id" style="color:#FF0000;" class="col-sm-3 control-label">experience_profile_id</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-secret" name="experience_profile_id" value="">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-returnUrl" class="col-sm-3 control-label">returnUrl</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-returnUrl" name="returnUrl" value="http://www.example.com">
+    </div>
+</div>
+<div class="form-group">
+    <label for="cfgitem-cancelUrl" class="col-sm-3 control-label">cancelUrl</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-cancelUrl" name="cancelUrl" value="http://www.example.com">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-ppplusJsLibraryLang" class="col-sm-3 control-label">ppplusJsLibraryLang</label>
+    <div class="col-sm-7">
+
+    <select class="form-control" id="cfgitem-ppplusJsLibraryLang" name="ppplusJsLibraryLang">
+        <option value="es_MX" selected="">Spanish (es_MX)</option>
+        <option value="en">English (en)</option>
+    </select>
+    </div>
+
+</div>
+<div class="form-group">
+    <label for="cfgitem-currency" class="col-sm-3 control-label">currency</label>
+    <div class="col-sm-7">
+
+    <select class="form-control" id="cfgitem-currency" name="currency">
+        <option value="EUR">Euro (EUR)</option>
+        <option value="BRL">Brazilian Real (BRL)</option>
+        <option value="MXN" selected="">Mexican Peso (MXN)</option>
+        <option value="USD">US Dollar (USD)</option>
+        <option value="GBP">Libra esterlina</option>
+        <option value="RUB">Rublo</option>
+        <option value="AUD">Dolar Australiano</option>
+        <option value="CAD">Dolar Canadiense</option>
+        <option value="CNY">Yuan</option>
+        <option value="JPY">Yen</option>
+    </select>
+    </div>
+
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-sslVersion" class="col-sm-3 control-label">sslVersion</label>
+    <div class="col-sm-7">
+
+    <select class="form-control" id="cfgitem-sslVersion" name="sslVersion">
+        <option value="SSLv1" selected="">SSLv1</option>
+        <option value="SSLv3">SSLv3</option>
+    </select>
+    </div>
+
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-iframeHeight" class="col-sm-3 control-label">iframeHeight</label>
+    <div class="col-sm-7">
+
+
+        <input type="text" class="form-control" id="cfgitem-iframeHeight" name="iframeHeight" value="">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-merchantInstallmentSelection" class="col-sm-3 control-label">merchantInstallmentSelection</label>
+    <div class="col-sm-7">
+    <select class="form-control" id="cfgitem-merchantInstallmentSelection" name="merchantInstallmentSelection">
+        <option value="" selected=""></option>
+        <option value="1" >1</option>
+        <option value="3" >3</option>
+        <option value="6" >6</option>
+        <option value="9" >9</option>
+        <option value="12" >12</option>
+    </select>
+    </div>    
+
+
+</div>
+
+<div class="form-group">
+    <label for="cfgitem-merchantInstallmentSelectionOptional" class="col-sm-3 control-label">merchantInstallmentSelectionOptional</label>
+    <div class="col-sm-7">
+
+    <select class="form-control" id="cfgitem-paypalMode" name="merchantInstallmentSelectionOptional">
+        <option value="true" selected="">true</option>
+        <option value="false">false</option>
+    </select>
+    </div>
+
+</div>
+
+
+<div class="form-group pull-right">
+    <a href="WebExperienceProfile.html" class="btn btn-primary" role="button">Crear o Consultar XP</a>
+    <button type="submit" class="btn btn-primary">Go to checkout</button>
+</div>
+
+</form>
+
+</div>
+</div>
+
+
+<script src="./Shop_files/jquery.min.js"></script>
+<script>
+$("#debug").on("click", function (e) {
+    $('.open').toggleClass('open closed');
+});
+$("#sessionInfo").on("click", function (e) {
+    e.stopPropagation();
+});
+$("#sessionInfoDrawer").on("click", function (e) {
+    e.stopPropagation();
+    $(this).toggleClass('closed open');
+});
+</script>
+<script src="./Shop_files/bootstrap.min.js"></script>
+<script src="./Shop_files/sample_shop.js"></script>
+
+
+
+</div></body></html>
